@@ -10,7 +10,7 @@ data "aws_vpc" "name" {
   default = true
 }
 
-resource "aws_security_group" "k8s-sec-gr" {
+resource "aws_security_group" "k8s-sec-gr2" {
   name = var.sec-gr-k8s
   vpc_id = data.aws_vpc.name.id
   tags = {
