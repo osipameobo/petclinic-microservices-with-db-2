@@ -80,7 +80,7 @@ resource "aws_iam_role_policy_attachment" "petclinic_s3_policy" {
 }
 
 resource "aws_iam_instance_profile" "petclinic-master-server-profile" {
-  name = "petclinic-master-server-profile"
+  name = "petclinic-master-server-profile-new"
   role = aws_iam_role.petclinic-master-server-s3-role.name
 }
 
